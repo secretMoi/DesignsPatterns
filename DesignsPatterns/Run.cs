@@ -14,6 +14,9 @@ namespace DesignsPatterns
 
 		public void Observer()
 		{
+			// permet à des objets de s'inscrire à des events d'un autre objet
+			// permet d'éviter de boucler périodiquement pour checker l'état
+
 			Subject subject = new Subject();
 
 			ObserverA observerA = new ObserverA();
